@@ -473,6 +473,8 @@ form .post-city .city{
 
 
 .header-sm{
+    position: sticky;
+    top: 0;
     display: flex;
     width: 390px;
     padding: 12px;
@@ -480,6 +482,7 @@ form .post-city .city{
     align-items: center;
     width: 100%;
     background: #F5F8FE;
+    z-index: 9
 }
 
 .header-sm .btn{
