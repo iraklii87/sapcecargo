@@ -9,6 +9,7 @@
   </head>
   <body>
 
+    
     <div class="sidebar">
         <div class="top">
 
@@ -240,7 +241,7 @@
 
     <div class="container">
         <div class="content">
-            <div class="first_options">
+            <div class="first_options mb-5">
 
                 <div class="form">
                     <div class="header">
@@ -376,6 +377,96 @@
                     </div>
                 </div>
 
+            </div>
+
+            
+            <div class="form invoice_entries">
+                <div class="header">
+                    <div></div>
+                    <h1 class="mb-0">Invoice entries</h1>
+                </div>
+
+                <div class="body">
+
+                    <form>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option value="1">Export Division</option>
+                              <option value="2">Export Division</option>
+                              <option value="3">Export Division</option>
+                            </select>
+                            <label for="floatingSelect">Department</label>
+                        </div>
+                        <div class="details">
+                            <div class="options">
+                                <div class="form-floating input">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Quantity</label>
+                                </div>
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option value="1">Export Division</option>
+                                      <option value="2">Export Division</option>
+                                      <option value="3">Export Division</option>
+                                    </select>
+                                    <label for="floatingSelect">Name</label>
+                                </div>
+    
+                                <div class="form-floating input">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Unit net price</label>
+                                </div>
+                                <div class="form-floating input">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">VAT %</label>
+                                </div>
+                                <div class="form-floating input">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Total net</label>
+                                </div>
+                                <div class="form-floating input">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Total gross</label>
+                                </div>
+                        
+                            </div>
+
+                            <div class="total">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option value="1">USD</option>
+                                      <option value="2">EUR</option>
+                                      <option value="3">GEL</option>
+                                    </select>
+                                    <label for="floatingSelect">Change currency</label>
+                                </div>
+
+                                <table class="table table-total  mb-0">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Net total</th>
+                                        <td>120 000.00</td>
+                                        <td>USD</td>
+                                      
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">VAT total</th>
+                                        <td>24 000.00</td>
+                                        <td>USD</td>
+                                        
+                                      </tr>
+                                      <tr class="last">
+                                        <th scope="row">Gross total</th>
+                                        <td>144 000.00</td>
+                                        <td>USD</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>

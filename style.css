@@ -12,6 +12,8 @@ body{
     flex-direction: column;
     border-right: 1px solid rgba(9, 36, 75, 0.20);
     background: #F5F8FE;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar .top{
@@ -226,7 +228,7 @@ a:link{
 .container .content{
     max-width: 1000px;
     width: 100%;
-    padding-top: 64px;
+    padding: 64px 0;
 }
 
 
@@ -236,14 +238,14 @@ a:link{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.first_options .form{
+.form{
     flex-grow: 1;
     border-radius: 8px;
     background: var(--Content, #F6F7F9);
     overflow: hidden;
 }
 
-.first_options .form .header{
+.form .header{
     padding: 18px;
     border-bottom: 1px solid var(--strokes-stroke-2, #DCDCDC);
     display: flex;
@@ -252,14 +254,14 @@ a:link{
 }
 
 
-.first_options .form .header div{
+.form .header div{
     width: 3px;
     height: 27px;
     border-radius: 3px;
     background: var(--Link, #2954EC);
 }
 
-.first_options .form .header h1{
+.form .header h1{
     color: #09244B;
     font-family: Noto Sans Georgian;
     font-size: 20px;
@@ -301,22 +303,22 @@ form{
     background-color: unset !important;
 }
 
-.first_options form .post-city{
+form .post-city{
     display: flex;
     gap: 16px;
 }
 
 
-.first_options form .post-city .zip{
+form .post-city .zip{
     width: 130px;
 }
 
 
-.first_options form .post-city .city{
+form .post-city .city{
     flex-grow: 1;
 }
 
-.first_options .btn-more{
+.btn-more{
     width: 100%;
     display: flex;
     width: 488px;
@@ -329,4 +331,44 @@ form{
     font-weight: 500;
     border: none !important;
     border-radius: 0;
+}
+
+.invoice_entries .details{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+.invoice_entries .details .options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.table-total {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.table-total tr{
+    height: 45px !important;
+}
+
+.table-total .last th,
+.table-total .last td{
+    border: none;
+}
+
+.table-total th{
+    color: #101010;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.table-total td{
+    color: rgba(16, 16, 16, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: middle;
 }
