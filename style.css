@@ -5,7 +5,7 @@ body{
     display: flex;
 }
 
-.sidebar{
+.offcanvas.offcanvas-start.sidebar{
     width: 350px;
     height: 100vh;
     display: flex;
@@ -221,6 +221,7 @@ a:link{
 
 .container{
     flex-grow: 1;
+    flex-direction: column;
     display: flex;
     justify-content: center;
 }
@@ -228,7 +229,8 @@ a:link{
 .container .content{
     max-width: 1000px;
     width: 100%;
-    padding: 64px 0;
+    margin: auto;
+
 }
 
 
@@ -321,7 +323,6 @@ form .post-city .city{
 .btn-more{
     width: 100%;
     display: flex;
-    width: 488px;
     padding: 11px 0px;
     justify-content: center;
     align-items: center;
@@ -371,4 +372,223 @@ form .post-city .city{
     font-size: 14px;
     font-weight: 400;
     vertical-align: middle;
+}
+
+
+.container .page-header{
+    padding: 42px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .page-header .left{
+    display: flex;
+    align-items: center;
+}
+
+.container .page-header .btn-back{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: var(--Content, #F6F7F9);
+    margin-right: 16px;
+}
+
+.container .page-header .btn-back:hover svg *{
+ stroke: #2954EC;
+}
+
+
+.container .page-header h2{
+    margin-bottom: 4px;
+    color: #09244B;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.container .breadcrumbs{
+    display: flex;
+    gap: 8px;
+}
+
+.container .breadcrumbs span{
+    color: rgba(23, 23, 23, 0.25);
+    font-size: 14px;
+}
+
+.container .breadcrumbs a{
+    color: rgba(23, 23, 23, 0.25);
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 70%;
+    color: rgba(23, 23, 23, 0.70);
+    font-size: 13px;
+    transition: .3s;
+    text-overflow: ellipsis;
+}
+
+
+.container .breadcrumbs a:hover{
+    opacity: 100%;
+    color: #2954EC;
+    text-decoration: underline !important;
+}
+
+
+.container .page-header .btn-more{
+    border-radius: 6px;
+    border: 1px solid #F2F4F6 !important;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: transparent;
+}
+
+
+.container .page-header .btn-more:hover{
+    background-color: #F2F4F6;
+}
+
+.container .page-header .btn-more:hover svg *{
+    stroke: #09244B;
+}
+
+@media screen and (min-width: 1360px) {
+    .offcanvas {
+        transform: none !important;
+        visibility: visible;
+    }
+}
+
+
+/* */
+
+
+
+.header-sm{
+    display: flex;
+    width: 390px;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #F5F8FE;
+}
+
+.header-sm .btn{
+    display: flex;
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.header-sm h3{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #09244B;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-sm .btn-more{
+    background-color: transparent;
+    border: 1px solid #F2F4F6 !important;
+}
+
+.breadcrumbs-sm{
+    padding: 12px 0;
+}
+
+.breadcrumbs-sm a,
+.breadcrumbs-sm span{
+    font-size: 12px;
+}
+
+.breadcrumbs-sm .flex-grow-1{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.submit{
+    padding: 48px 0;
+    padding-bottom: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit .btn{
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #416FF4;
+    color: var(--light-light-1, #FFF);
+    font-size: 14px;
+    max-width: 400px;
+    width: 100%;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 420px) {
+    .d-small-none {
+        display: none !important;
+    }
+    .content{
+        padding: 12px
+    }
+    .content .first_options{
+        display: unset;
+    }
+    .form .header{
+        padding: 12px;
+        gap: 12px;
+    }
+    form{
+        padding: 12px;
+        gap: 8px;
+    }
+    form .post-city{
+        gap: 8px;
+    }
+    .form{
+        margin-bottom: 16px;
+    }
+
+    .offcanvas{
+        width: 0 !important;
+        position: fixed !important;
+    }
+
+    .offcanvas.show{
+        width: 100vw !important;
+    }
+
+    .invoice_entries .details{
+        display: unset;
+    }
+
+    .invoice_entries .details .options{
+        gap: 8px;
+    }
+    hr{
+        border-color: rgba(0, 0, 0, 0.10);
+    }
+
+    .submit{
+        padding-bottom: unset;
+        padding: 32px 0;
+    }
 }

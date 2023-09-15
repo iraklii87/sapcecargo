@@ -9,11 +9,17 @@
   </head>
   <body>
 
+
+   
     
-    <div class="sidebar">
+    <div class="sidebar offcanvas offcanvas-start d-lg-show" tabindex="-1" id="offcanvasExample" data-bs-scroll="true" data-bs-backdrop="false" aria-labelledby="offcanvasExampleLabel">
         <div class="top">
 
             <div class="header d-flex justify-content-between align-items-center">
+
+                <button class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    close
+                </button>
                 
                 <svg width="137" height="24" viewBox="0 0 137 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="24" fill="white" fill-opacity="0.01"/>
@@ -239,8 +245,90 @@
     </div>
 
 
-    <div class="container">
+    <div class="container p-0">
+
+        <div class="header-sm d-sm-none">
+            <button class="btn btn-burger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.25 5.25H15.75" stroke="#526581" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M2.25 9H15.75" stroke="#526581" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M2.25 12.75H15.75" stroke="#526581" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>                        
+            </button>
+
+
+            <h3>Invoice details</h3>
+
+
+            <button class="btn btn-more">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_18_598)">
+                    <rect x="4.90002" y="11.9" width="2.8" height="2.8" rx="1.4" transform="rotate(-90 4.90002 11.9)" fill="#526581"/>
+                    <rect x="9.09998" y="11.9" width="2.8" height="2.8" rx="1.4" transform="rotate(-90 9.09998 11.9)" fill="#526581"/>
+                    <rect x="13.3" y="11.9" width="2.8" height="2.8" rx="1.4" transform="rotate(-90 13.3 11.9)" fill="#526581"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_18_598">
+                    <rect width="21" height="21" fill="white" transform="matrix(0 -1 1 0 0 21)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                    
+            </button>
+        </div>
         <div class="content">
+
+
+           
+
+            <div class="breadcrumbs breadcrumbs-sm d-sm-none">
+                <a href="#">Projects</a>
+                <span>/</span>
+                <a class="flex-grow-1" href="#">TEAM WORK / AF / TBS-DXB / AVI / FALCONS / GEO FALCONS 190720231015</a>
+                <span>/</span>
+                <a href="#">Invoice</a>
+            </div>
+
+            <div class="page-header d-small-none">
+                <div class="left">
+                    <button class="btn btn-back">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.38001 3.95333L2.33334 8L6.38001 12.0467" stroke="#526581" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.6667 8H2.44669" stroke="#526581" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <div>
+                        <h2>Invoice details</h2>
+
+                        <div class="breadcrumbs">
+                            <a href="#">Projects</a>
+                            <span>/</span>
+                            <a href="#">TEAM WORK / AF / TBS-DXB / AVI / FALCONS / GEO FALCONS 190720231015</a>
+                            <span>/</span>
+                            <a href="#">Invoice</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-more">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18_598)">
+                        <rect x="4.90002" y="11.9" width="2.8" height="2.8" rx="1.4" transform="rotate(-90 4.90002 11.9)" fill="#526581"/>
+                        <rect x="9.09998" y="11.9" width="2.8" height="2.8" rx="1.4" transform="rotate(-90 9.09998 11.9)" fill="#526581"/>
+                        <rect x="13.3" y="11.9" width="2.8" height="2.8" rx="1.4" transform="rotate(-90 13.3 11.9)" fill="#526581"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_18_598">
+                        <rect width="21" height="21" fill="white" transform="matrix(0 -1 1 0 0 21)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                        
+                </button>
+            </div>
+
+
             <div class="first_options mb-5">
 
                 <div class="form">
@@ -252,7 +340,7 @@
 
                     <div class="body">
                         <form>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-lg-3 mb-2">
                                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                   <option value="1">Export Division</option>
                                   <option value="2">Export Division</option>
@@ -261,18 +349,18 @@
                                 <label for="floatingSelect">Department</label>
                             </div>
 
-                            <div class="form-floating input mb-3">
+                            <div class="form-floating input mb-lg-3 mb-2">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">VAT ID</label>
                             </div>
 
 
-                            <div class="form-floating input mb-3">
+                            <div class="form-floating input mb-lg-3 mb-2">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Street and no</label>
                             </div>
 
-                            <div class="d-flex post-city mb-3">
+                            <div class="d-flex post-city mb-lg-3 mb-2">
                                 <div class="form-floating input  zip">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                     <label for="floatingInput">Postcode</label>
@@ -285,13 +373,13 @@
                             </div>
 
 
-                            <div class="form-floating input mb-3">
+                            <div class="form-floating input mb-lg-3 mb-2">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Bank account</label>
                             </div>
 
 
-                            <div class="d-flex gap-3">
+                            <div class="d-flex gap-lg-3 gap-2">
                                 <div class="form-floating input flex-grow-1">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                     <label for="floatingInput">Postcode</label>
@@ -319,7 +407,7 @@
 
                     <div class="body">
                         <form>
-                            <div class="form-floating mb-3">
+                            <div class="form-floating mb-lg-3 mb-2">
                                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                   <option value="1">Export Division</option>
                                   <option value="2">Export Division</option>
@@ -328,18 +416,18 @@
                                 <label for="floatingSelect">Name</label>
                             </div>
 
-                            <div class="form-floating input mb-3">
+                            <div class="form-floating input mb-lg-3 mb-2">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">VAT ID</label>
                             </div>
 
 
-                            <div class="form-floating input mb-3">
+                            <div class="form-floating input mb-lg-3 mb-2">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Street and no</label>
                             </div>
 
-                            <div class="d-flex post-city mb-3">
+                            <div class="d-flex post-city mb-lg-3 mb-2">
                                 <div class="form-floating input  zip">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                     <label for="floatingInput">Postcode</label>
@@ -352,13 +440,13 @@
                             </div>
 
 
-                            <div class="form-floating input mb-3">
+                            <div class="form-floating input mb-lg-3 mb-2">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Bank account</label>
                             </div>
 
 
-                            <div class="d-flex gap-3">
+                            <div class="d-flex gap-lg-3 gap-2">
                                 <div class="form-floating input flex-grow-1">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                                     <label for="floatingInput">Postcode</label>
@@ -389,7 +477,7 @@
                 <div class="body">
 
                     <form>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-lg-3 mb-2">
                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                               <option value="1">Export Division</option>
                               <option value="2">Export Division</option>
@@ -431,8 +519,10 @@
                         
                             </div>
 
+                            <hr class="d-sm-none">
+
                             <div class="total">
-                                <div class="form-floating mb-3">
+                                <div class="form-floating mb-lg-3 mb-2">
                                     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                       <option value="1">USD</option>
                                       <option value="2">EUR</option>
@@ -461,12 +551,16 @@
                                         <td>USD</td>
                                       </tr>
                                     </tbody>
-                                  </table>
+                                </table>
                             </div>
                         </div>
                     </form>
 
                 </div>
+            </div>
+
+            <div class="submit">
+                <button class="btn">Submit</button>
             </div>
         </div>
     </div>
