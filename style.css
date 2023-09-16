@@ -722,6 +722,22 @@ form .post-city .city{
     color: rgba(65, 111, 244, 1);
 }
 
+
+.btn-burger{
+    position: relative;
+}
+
+.btn-burger .badge-dot{
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    width: 8px;
+    height: 6px;
+    border-radius: 6px;
+    background: #E51F1F;
+    box-shadow: 0px 0px 2px 2px rgba(229, 31, 31, 0.15);
+}
+
 @media screen and (max-width: 420px) {
 
     .sidebar .top{
