@@ -729,9 +729,9 @@ form .post-city .city{
 
 .btn-burger .badge-dot{
     position: absolute;
-    top: 4px;
+    top: 8px;
     right: 8px;
-    width: 8px;
+    width: 4px;
     height: 6px;
     border-radius: 6px;
     background: #E51F1F;
