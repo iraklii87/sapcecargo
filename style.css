@@ -499,7 +499,9 @@ form .post-city .city{
 
 /* */
 
-
+.offcanvas.hiding, .offcanvas.show, .offcanvas.showing{
+    width: 100vw !important;
+}
 
 .header-sm{
     position: sticky;
@@ -521,11 +523,14 @@ form .post-city .city{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    padding: 0;
+    border: none !important;
+
 }
 
 .header-sm h3{
-    padding: 0 !important;
-    margin: 0 !important;
+    margin-top: 3px;
+    margin-bottom: 0;
     color: #09244B;
     font-size: 16px;
     font-weight: 600;
@@ -712,6 +717,30 @@ form .post-city .city{
 }
 
 @media screen and (max-width: 420px) {
+
+    .sidebar .top{
+        padding: 12px;
+    }
+
+    .sidebar .search-group{
+        padding: 12px 0;
+    }
+
+
+    .close-small{
+        color: rgba(23, 23, 23, 0.6);
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .sidebar .header{
+        height: 42px;
+    }
+
+    .sidebar .menu .link{
+        padding: 8px 0;
+    }
     .d-small-none {
         display: none !important;
     }
