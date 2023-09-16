@@ -760,4 +760,18 @@ form .post-city .city{
         padding-bottom: unset;
         padding: 32px 0;
     }
+
+    #notifications-dropdown{
+        position: fixed !important;
+        height: calc(100vh - 88px);
+        top: 88px !important;
+        transform: unset !important;
+        box-shadow: none;
+    }
+
+    #notifications-dropdown .header{
+        padding: 0 16px;
+        padding-bottom: 12px;
+        background: #f4f7fd;
+    }
 }
