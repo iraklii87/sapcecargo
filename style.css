@@ -30,7 +30,7 @@ body{
 
 .offcanvas.offcanvas-start.sidebar{
     width: 350px;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     border-right: 1px solid rgba(9, 36, 75, 0.20);
@@ -712,6 +712,11 @@ form .post-city .city{
 }
 
 
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    border: none;
+}
+
+
 #notifications-dropdown .btn-more:hover{
     color: rgba(65, 111, 244, 1);
 }
@@ -792,7 +797,7 @@ form .post-city .city{
 
     #notifications-dropdown{
         position: fixed !important;
-        height: calc(100vh - 66px);
+        height: calc(100dvh - 66px);
         width: 100vw;
         top: 66px !important;
         transform: unset !important;
