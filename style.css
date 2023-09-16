@@ -764,6 +764,7 @@ form .post-city .city{
     #notifications-dropdown{
         position: fixed !important;
         height: calc(100vh - 88px);
+        width: 100vw;
         top: 88px !important;
         transform: unset !important;
         box-shadow: none;
